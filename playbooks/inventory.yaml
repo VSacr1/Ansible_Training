@@ -1,7 +1,7 @@
 all: 
   children: 
     test: 
-      hosts: all
+      hosts: 51.11.156.29
         
       vars: 
         ansible_user: jenkins
