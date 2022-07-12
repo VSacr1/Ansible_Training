@@ -4,7 +4,7 @@ pipeline{
 	stages {
 		stage('Deploy') {
 			steps {
-				sh "ansible-playbook playbooks/playbook-1.yaml"
+				sh "ansible-playbook -i playbooks/inventory.yaml playbooks/playbook-1.yaml"
 			}
 		}
 	}
